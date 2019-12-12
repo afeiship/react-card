@@ -1,0 +1,37 @@
+$react-card-options: (
+  border-radius: 4px,
+  padding: 12px,
+  background: #fff
+) !default;
+
+.react-card {
+  $border-radius: map-get( $map: $react-card-options, $key: border-radius );
+  $padding: map-get( $map: $react-card-options, $key: padding );
+  $background: map-get( $map: $react-card-options, $key: background );
+
+  border-radius: $border-radius;
+  padding: $padding;
+  background: $background;
+  transition: all 0.3s;
+  position: relative;
+
+  //shadowable
+  &.is-shadowable {
+    box-shadow: 0 2px 10px 0 rgba(#000, 0.06);
+  }
+
+  //hoverable
+  &.is-hoverable {
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 2px 20px 0 rgba(#000, 0.1);
+    }
+  }
+
+  //clickable
+  &.is-clickable {
+    &:active {
+      background: darken(#fff, 5%);
+    }
+  }
+}

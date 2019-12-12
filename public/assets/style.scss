@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body,
+#app,
+.app-container {
+  background: #eee;
+}
+
+@import "@/components/style.scss";
+
+.app-container {
+  width: 30%;
+  margin: 50px auto;
+  .react-card {
+    margin-bottom: 10px;
+    font-size: 14px;
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}
