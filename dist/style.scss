@@ -1,13 +1,15 @@
 $react-card-options: (
   border-radius: 4px,
   padding: 12px,
-  background: #fff
+  background: #fff,
+  translate-y: -3px
 ) !default;
 
 .react-card {
   $border-radius: map-get( $map: $react-card-options, $key: border-radius );
   $padding: map-get( $map: $react-card-options, $key: padding );
   $background: map-get( $map: $react-card-options, $key: background );
+  $translate-y: map-get( $map: $react-card-options, $key: translate-y );
 
   border-radius: $border-radius;
   padding: $padding;
@@ -23,8 +25,10 @@ $react-card-options: (
   //hoverable
   &.is-hoverable {
     cursor: pointer;
+    transform: translateY(0px);
     &:hover {
       box-shadow: 0 2px 20px 0 rgba(#000, 0.1);
+      transform: translateY($translate-y);
     }
   }
 
