@@ -1,9 +1,6 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import noop from '@feizheng/noop';
-import objectAssign from 'object-assign';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 const CLASS_NAME = 'react-card';
 
 export default class ReactCard extends Component {
