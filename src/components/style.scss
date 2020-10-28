@@ -48,7 +48,6 @@ $react-card-options: (
     cursor: pointer;
     transform: translateY(0px);
     &:hover {
-
       transform: translateY($translate-y);
     }
     &.is-shadowable{
