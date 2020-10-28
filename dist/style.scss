@@ -31,6 +31,7 @@ $react-card-options: (
     @extend %is-active;
   }
 
+  &[disabled],
   &.is-disabled{
     pointer-events: none;
     user-select: none;
@@ -47,8 +48,13 @@ $react-card-options: (
     cursor: pointer;
     transform: translateY(0px);
     &:hover {
-      box-shadow: 0 2px 20px 0 rgba(#000, 0.1);
+
       transform: translateY($translate-y);
+    }
+    &.is-shadowable{
+      &:hover{
+        box-shadow: 0 2px 20px 0 rgba(#000, 0.1);
+      }
     }
   }
 
