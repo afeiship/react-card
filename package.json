@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/react-card",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Card for react.",
   "main": "dist/index.js",
   "scripts": {
@@ -18,7 +18,13 @@
   },
   "keywords": [
     "react",
-    "component"
+    "card",
+    "component",
+    "components",
+    "clickable",
+    "active",
+    "hoverab",
+    "disabled"
   ],
   "author": "afei",
   "license": "MIT",
