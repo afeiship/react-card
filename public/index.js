@@ -1,13 +1,15 @@
-import ReactCard from '../src/main';
-import ReactDOM from 'react-dom';
+import ReactDemokit from '@jswork/react-demokit';
 import React from 'react';
+import ReactDOM from 'react-dom';
+import ReactCard from '../src/main';
 import './assets/style.scss';
 
 class App extends React.Component {
-  componentDidMount() {}
   render() {
     return (
-      <div className="app-container">
+      <ReactDemokit
+        className="p-3 app-container"
+        url="https://github.com/afeiship/react-card">
         <ReactCard>
           <img
             src="http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg"
@@ -26,7 +28,7 @@ class App extends React.Component {
             中年时，想要一个田螺姑娘，温婉可人，红袖添香，半夜写累了，让她变回原形，加干辣椒、花椒、姜、蒜片爆炒，淋入香油，起锅装盘。
           </p>
         </ReactCard>
-      </div>
+      </ReactDemokit>
     );
   }
 }

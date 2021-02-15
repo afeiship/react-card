@@ -1,9 +1,9 @@
 import {
-  externals, inputs,
+  externals,
+  inputs,
   outputs,
-
   plugins
-} from '@feizheng/webpack-lib-kits';
+} from '@jswork/webpack-lib-kits';
 import merge from 'webpack-merge';
 import baseConfig from './base';
 
@@ -13,9 +13,10 @@ export default merge(baseConfig, {
     library: 'ReactCard'
   }),
   devtool: 'source-map',
-  externals: externals.base(),
+  externals: externals.node(),
   plugins: [
+    plugins.banner(),
     plugins.clean(),
-    plugins.copyStyles()
+    plugins.copyStyles(),
   ]
 });

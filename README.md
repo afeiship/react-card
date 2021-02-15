@@ -8,12 +8,7 @@
 
 ## installation
 ```shell
-npm install -S @feizheng/react-card
-```
-
-## update
-```shell
-npm update @feizheng/react-card
+npm install -S @jswork/react-card
 ```
 
 ## properties
@@ -30,23 +25,28 @@ npm update @feizheng/react-card
 ## usage
 1. import css
   ```scss
-  @import "~@feizheng/react-card/dist/style.scss";
+  @import "~@jswork/react-card/dist/style.css";
+
+  // or use sass
+  @import "~@jswork/react-card/dist/style.scss";
 
   // customize your styles:
   $react-card-options: ()
   ```
 2. import js
   ```js
-  import ReactCard from '@feizheng/react-card';
-  import ReactDOM from 'react-dom';
+  import ReactDemokit from '@jswork/react-demokit';
   import React from 'react';
+  import ReactDOM from 'react-dom';
+  import ReactCard from '@jswork/react-card';
   import './assets/style.scss';
 
   class App extends React.Component {
-    componentDidMount() {}
     render() {
       return (
-        <div className="app-container">
+        <ReactDemokit
+          className="p-3 app-container"
+          url="https://github.com/afeiship/react-card">
           <ReactCard>
             <img
               src="http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg"
@@ -65,7 +65,7 @@ npm update @feizheng/react-card
               中年时，想要一个田螺姑娘，温婉可人，红袖添香，半夜写累了，让她变回原形，加干辣椒、花椒、姜、蒜片爆炒，淋入香油，起锅装盘。
             </p>
           </ReactCard>
-        </div>
+        </ReactDemokit>
       );
     }
   }
@@ -81,14 +81,14 @@ npm update @feizheng/react-card
 ## license
 Code released under [the MIT license](https://github.com/afeiship/react-card/blob/master/LICENSE.txt).
 
-[version-image]: https://img.shields.io/npm/v/@feizheng/react-card
-[version-url]: https://npmjs.org/package/@feizheng/react-card
+[version-image]: https://img.shields.io/npm/v/@jswork/react-card
+[version-url]: https://npmjs.org/package/@jswork/react-card
 
-[license-image]: https://img.shields.io/npm/l/@feizheng/react-card
+[license-image]: https://img.shields.io/npm/l/@jswork/react-card
 [license-url]: https://github.com/afeiship/react-card/blob/master/LICENSE.txt
 
-[size-image]: https://img.shields.io/bundlephobia/minzip/@feizheng/react-card
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/react-card
 [size-url]: https://github.com/afeiship/react-card/blob/master/dist/react-card.min.js
 
-[download-image]: https://img.shields.io/npm/dm/@feizheng/react-card
-[download-url]: https://www.npmjs.com/package/@feizheng/react-card
+[download-image]: https://img.shields.io/npm/dm/@jswork/react-card
+[download-url]: https://www.npmjs.com/package/@jswork/react-card
