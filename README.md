@@ -25,10 +25,7 @@ npm install -S @jswork/react-card
 ## usage
 1. import css
   ```scss
-  @import "~@jswork/react-card/dist/style.css";
-
-  // or use sass
-  @import "~@jswork/react-card/dist/style.scss";
+  @import "~@jswork/wsui-card/dist/style.scss";
 
   // customize your styles:
   $react-card-options: ()

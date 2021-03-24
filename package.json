@@ -1,6 +1,6 @@
 {
   "name": "@jswork/react-card",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Card for react.",
   "main": "dist/index.js",
   "scripts": {
