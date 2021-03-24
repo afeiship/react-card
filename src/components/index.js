@@ -52,6 +52,7 @@ export default class ReactCard extends Component {
       <div
         data-component={CLASS_NAME}
         className={classNames(
+          'wsui-card',
           {
             'is-active': active,
             'is-disabled': disabled,
